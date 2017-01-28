@@ -1,0 +1,118 @@
+body {
+    background-color: #ffffff;
+    font-family: "Verdana";
+    margin: 0;
+}
+
+.bg-overlay {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-480px;
+}
+
+.container {
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    text-align:center;
+    height:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-480px;
+}
+
+.heading{
+    background-color:#ffffff;
+    padding:5px;
+    box-shadow: 0 2px 2px -2px #dedede;
+}
+
+.circular {
+	margin:5px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background: url(../images/profile.jpg) no-repeat;
+	background-size:200px 200px;
+	background-position:left top;
+	box-shadow: 0 0 8px rgba(153, 153, 153, .8);
+	-webkit-box-shadow: 0 0 8px rgba(153, 153, 153, .8);
+	-moz-box-shadow: 0 0 8px rgba(153, 153, 153, .8);
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+a, a:visited{
+    text-decoration:underline;
+    color:#00BFFF;
+    
+}
+
+.addthis_horizontal_follow_toolbox {
+    width:180px;   
+}
+
+ul{
+    line-height:1.5;
+    text-align:left;
+}
+
+.sec {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width:460px;
+    float:left;
+}
+
+.gradient {
+    content: "";
+    height: 100%;
+    width:100%;
+    position:fixed;
+    z-index:-6;
+    padding:15px;
+}
+
+.gradient.one {
+    background-image: linear-gradient(to bottom, #009acd 0%, #00b2ee 100%);
+}
+
+.gradient.two {
+    background-image: linear-gradient(to bottom, #00b2ee 0%, #62a119 100%);
+    display: none;
+}
+
+.gradient.three {
+    background-image: linear-gradient(to bottom, #62a119 0%, #cebb49 100%);
+    display: none;
+}
+
+.gradient.four {
+    background-image: linear-gradient(to bottom, #cebb49 0%, #b10f0f 100%);
+    display: none;
+}
+
+.gradient.five {
+    background-image: linear-gradient(to bottom, #b10f0f 0%, #bf0040 100%);
+    display: none;
+}
+
+footer{
+    display:block;
+    width:100%;
+    position:absolute;
+    bottom:0;
+}

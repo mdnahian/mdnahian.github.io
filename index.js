@@ -7,12 +7,11 @@ app.view('html', ect.render);
 var stat  = require('diet-static')({ path: app.path+'/views/' });
 app.view('file', stat);
 
-app.listen('http://mdislam.com/');
+app.listen('0.0.0.0');
 
 app.get('/', function($){
 	$.end();
 });
-
 
 app.get('/privacy', function($){
 	$.end();
