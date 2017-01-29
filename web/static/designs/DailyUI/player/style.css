@@ -1,0 +1,162 @@
+body {
+	background-color:#dedede;
+	margin:0;
+	font-family: 'Questrial', sans-serif;
+}
+
+.head {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	padding:16px;
+	background-color:#ffffff;
+	box-shadow: 0 2px 1px -1px #999999;
+}
+
+.head .title {
+	display:inline;
+	font-family: 'Francois One', sans-serif;
+}
+
+.head img {
+	width:16px;
+	float:right;
+	position:relative;
+	top:2px;
+}
+
+.foot {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#ffffff;
+	padding:16px;
+	box-shadow: 0 -2px 1px -1px #999999;
+}
+
+.foot img {
+	display:inline;
+	margin-left:16px;
+	margin-right:16px;
+}
+
+.foot .play {
+	width:30px;
+}
+
+.foot .pn {
+	width:24px;
+	position:relative;
+	top:-2px;
+	
+}
+
+.container {
+	margin:0 auto;
+}
+
+.bg {
+	background-image:url('bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:-1;
+	background-repeat:no-repeat;
+}
+
+.playlist {
+	margin:0;
+	list-style:none;
+	padding: 0;
+    list-style-type: none;
+    margin-top:50px;
+    margin-bottom:60px;
+}
+
+.playlist li {
+	background-color:#eeeeee;
+	padding:16px;
+	background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.playlist li:hover {
+	background-color:#dedede;
+}
+
+.playlist li:focus {
+	background-color:#dedede;
+}
+
+.playlist .active {
+	background-color:#dedede;
+}
+
+.song {
+	font-weight:bold;
+	margin-bottom:2px;
+}
+
+.album {
+	font-size:13px;
+	color:#999999;
+	font-weight:bold;
+}
+
+.searchbar {
+	display:none;
+	position:absolute;
+	z-index:1;
+	border:0;
+	padding:8px;
+	background-color:#ffffff;
+	left:0;
+	right:0;
+	width:100%;
+}
+
+input:focus {
+	outline: none;
+}
+
+.title:focus {
+	outline:none;
+}
+
+.title::selection {
+	background-color:#000000;
+	color:#ffffff;
+}
+
+/*@media(max-width:767px){
+	.bg {
+		min-height:350px;
+	}
+}
+@media(min-width:768px){
+	.bg {
+		min-height:560px;
+	}
+}
+@media(min-width:992px){
+	.bg {
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		z-index:-1;
+	}
+}
+@media(min-width:1200px){
+	.bg {
+		min-height:960px;
+	}
+}*/

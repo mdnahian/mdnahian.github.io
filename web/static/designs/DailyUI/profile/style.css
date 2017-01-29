@@ -1,0 +1,133 @@
+body {
+	background-color:#eeeeee;
+	margin:0;
+	font-family: 'Merriweather', serif;
+	overflow:hidden;
+}
+
+.wrapper {
+	margin:0;
+}
+
+.left {
+	padding:16px;
+	background-color:#880a0a;
+	position:absolute;
+	left:0;
+	right:75%;
+	bottom:0;
+	top:0;
+	text-align:center;
+	color:#ffffff;
+}
+
+.right {
+	background-color:#edb8b8;
+	position:absolute;
+	left:25%;
+	right:0;
+	bottom:0;
+	top:0;
+	overflow-y:auto;
+}
+
+.profile img {
+	width:100%;
+	max-width:250px;
+	margin-top:16px;
+}
+
+.profile h1 {
+	text-align:center;
+	font-size:18px;
+}
+
+.urls{
+	text-align:left;
+}
+
+.urls ul{
+	list-style:none;
+	padding: 0;
+    list-style-type: none;
+}
+
+.urls ul li {
+	text-align:center;
+	margin-top:32px;
+}
+
+.urls ul li a {
+	text-decoration:none;
+	color:#ffffff;
+	padding:8px;
+	background-color:#dc5151;
+}
+
+.section {
+	margin-top:16px;
+	margin-bottom:16px;
+	padding:16px;
+	background-color:#dc5151;
+	color:#ffffff;
+	position:relative;
+	z-index:10;
+}
+
+.section h3 {
+	position:relative;
+	z-index:10;
+	background-color:#dc5151;
+	padding:16px;
+}
+
+.section-ul {
+	list-style-image: url('line.png');
+}
+
+.section-ul li {
+}
+
+.section-ul li ul {
+	list-style-image: initial;
+}
+
+.section-ul li ul li {
+	margin-top:16px;
+	margin-bottom:16px;
+}
+
+
+.line {
+	width:2px;
+	position:absolute;
+	left:36px;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	background-color:#880a0a;
+}
+
+.time {
+	float:right;
+}
+
+
+@media(max-width:767px){
+	.left {
+		z-index:15;
+		right:0;
+	}
+
+	.right {
+		left:0;
+	}
+}
+
+@media(min-width:768px){
+	
+}
+
+@media(min-width:992px){}
+@media(min-width:1200px){}
+

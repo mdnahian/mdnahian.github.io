@@ -1,0 +1,187 @@
+body{
+	margin:0;
+	font-family: 'Oxygen', sans-serif;
+}
+
+.wrapper {
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:#eeeeee;
+}
+
+.wide {
+	position:absolute;
+	left:0;
+	right:30%;
+	top:0;
+	bottom:0;
+	height:100%;
+	background-color:#dedede;
+	
+	background:url('trump.jpg');
+	background-position:right;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	
+}
+
+.contribute {
+	font-family: 'Bitter', serif;
+	font-size:36px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color: rgb(43, 50, 95);
+	background-color: rgba(43, 50, 95, 0.9);
+	padding:10px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	cursor:pointer;
+	animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+	50% { 
+		background-color: rgb(188, 0, 0);
+		background-color: rgba(188, 0, 0, 0.9);
+	}
+}
+
+.quote {
+	font-family: 'Bitter', serif;
+	font-size:36px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color: rgb(188, 0, 0);
+	background-color: rgba(188, 0, 0, 0.9);
+	padding:10px;
+	position:absolute;
+	left:0;
+	bottom:25%;
+}
+
+.thin {
+	position:absolute;
+	left:70%;
+	right:0;
+	top:0;
+	bottom:0;
+	height:100%;
+	background-color:#ffffff;
+	overflow-y:auto;
+}
+
+.inner {
+	max-width:350px;
+	padding:16px;
+	text-align:center;
+	margin:auto;
+}
+
+.title {
+	font-family: 'Bitter', serif;
+}
+
+.description {
+	margin-bottom:16px;
+}
+
+.form {
+	text-align:left;
+	max-width:250px;
+	margin:auto;
+}
+
+.form-group {
+	margin-bottom:10px;
+}
+
+.input {
+	width: 100%;
+	background-color:#eeeeee;
+	padding:5px;
+	font-size:15px;
+	border:0;	
+}
+
+.input:focus {
+	outline:none;	
+}
+
+.label {
+	margin-bottom:5px;	
+}
+
+.btn {
+	text-decoration: none;
+	width:100%;
+	margin-top:16px;
+	text-align:center;
+	background-color:#BC0000;
+	border:3px #BC0000 solid;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px;	
+}
+
+.btn:focus {
+	outline:none;
+}
+
+.btn:hover {
+	background-color:#ffffff;
+	color:#BC0000;
+	border-color:#BC0000;
+	cursor:pointer;
+}
+
+.btn:active {
+	background-color:#8F0101;
+	border-color:#8F0101;
+	color:#ffffff;
+}
+
+
+
+
+
+@media(max-width:767px){
+	.wide {
+		right:0;
+		z-index:1;
+	}
+	
+	.thin {
+		left:0;
+		z-index:5;	
+	}
+}
+
+@media(min-width:768px){
+	.wide {
+		right:50%;
+		z-index:1;
+	}
+	
+	.thin {
+		left:50%;
+		z-index:5;	
+	}
+}
+
+@media(min-width:992px){
+	.wide {
+		right:40%;
+		z-index:1;
+	}
+	
+	.thin {
+		left:60%;
+		z-index:5;	
+	}
+}

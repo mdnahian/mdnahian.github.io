@@ -1,0 +1,141 @@
+body {
+	background-color:#ffffff;
+	margin:0;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.wrapper {
+	width:100%;
+	max-width:480px;
+	margin:0 auto;
+}
+
+.container {
+	padding:16px;
+}
+
+.title, .subtitle {
+	font-family: 'Montserrat', sans-serif;
+	margin:0;
+}
+
+hr {
+	margin-top:16px;
+	margin-bottom:16px;
+	border-color:#242424;
+}
+
+.option {
+	width:100%;
+	max-width:250px;
+	text-align:center;
+	background-color:#ffffff;
+	margin:0 auto;
+	margin-top:32px;
+	margin-bottom:64px;
+}
+
+.option-img {
+	width:100%;
+	border-bottom:2px #242424 solid;
+}
+
+.option-label {
+	font-size:15px;
+	padding:5px;
+}
+
+.price {
+	padding-bottom:8px;
+}
+
+.form {
+	width:100%;
+}
+
+.group {
+	margin-bottom:32px;
+}
+
+.group-head {
+	margin-bottom:32px;
+}
+
+.group-title, .group-subtitle {
+	margin-top:0;
+	margin-bottom:8px;
+}
+
+.input {
+	background-color:#eeeeee;
+	padding:16px;
+	margin-bottom:16px;
+}
+
+input {
+	background-color:#eeeeee;
+	width:100%;
+	border:0;
+}
+
+input:focus {
+	outline:none;
+}
+
+label {
+	display:block;
+	color:#999999;
+	font-size:12px;
+}
+
+.border {
+	max-width:250px;
+	border:2px #242424 solid;
+	margin: 0 auto;
+}
+
+select {
+	background-color:#eeeeee;
+	width:100%;
+	border-radius:0;
+	-webkit-appearance: none;
+	padding:16px;
+	margin-top:8px;
+	margin-bottom:16px;
+	border:0;
+}
+
+select:focus {
+	outline:none;
+}
+
+.cards {
+	float:right;
+}
+
+.cards-img {
+	height:30px;
+}
+
+.right {
+	float:right;
+}
+
+.final {
+	margin-top:32px;
+}
+
+.btn {
+	background-color:#69CD3C;
+	padding:16px;
+	color:#ffffff;
+	text-decoration:none;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.check {
+	display:inline;
+	float:left;
+	width:25px;
+}

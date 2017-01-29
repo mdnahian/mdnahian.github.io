@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Music Player</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Francois+One|Questrial" rel="stylesheet">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="scripts.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+
+			<div class="head">
+				<div id="title" class="title">Eminem - Rap God (Explicit)</div>
+ 				<a onclick="searchbar()"><img src="search.png"/></a>
+			</div>
+
+			<div class="container">
+				<div class="bg"></div>
+				<ul class="playlist">
+					<li>
+						<div class="song">Love the Way You Lie</div>
+						<div class="album">Recovery · 2010</div>
+					</li>
+					<li>
+						<div class="song">Not Afraid</div>
+						<div class="album">Recovery · 2010</div>
+					</li>
+					<li>
+						<div class="song">Without Me</div>
+						<div class="album">The Eminem Show · 2002</div>
+					</li>
+					<li>
+						<div class="song">The Monster</div>
+						<div class="album">The Marshall Mathers LP 2 · 2013</div>
+					</li>
+					<li class="active">
+						<div class="song">Rap God</div>
+						<div class="album">The Marshall Mathers LP 2 · 2013</div>
+					</li>
+					<li>
+						<div class="song">The Real Slim Shady</div>
+						<div class="album">The Marshall Mathers LP · 2000</div>
+					</li>
+					<li>
+						<div class="song">Berzerk</div>
+						<div class="album">The Marshall Mathers LP 2 · 2013</div>
+					</li>
+					<li>
+						<div class="song">My Name Is</div>
+						<div class="album">The Slim Shady LP · 1999</div>
+					</li>
+					<li>
+						<div class="song">Cleanin' Out My Closet</div>
+						<div class="album">The Eminem Show · 2002</div>
+					</li>
+					<li>
+						<div class="song">Headlights</div>
+						<div class="album">The Marshall Mathers LP 2 · 2013</div>
+					</li>
+					<li>
+						<div class="song">Superman</div>
+						<div class="album">The Eminem Show · 2002</div>
+					</li>
+					<li>
+						<div class="song">Kings Never Die</div>
+						<div class="album">Southpaw · 2015</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="foot">
+				<center>
+					<img class="pn" src="previous.png">
+					<a onclick="play()"><img class="play" src="play.png"></a>
+					<img class="pn" src="next.png">
+				</center>
+			</div>
+
+		</div>
+	</body>
+</html>
