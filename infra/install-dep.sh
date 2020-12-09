@@ -24,7 +24,7 @@ systemctl enable mdislam
 mv  ${INSTALL_DIR}/${APP_NAME}/web/rest.nginx /etc/nginx/sites-available/mdislam.com
 ln -sf /etc/nginx/sites-available/mdislam.com /etc/nginx/sites-enabled
 nginx -t
-systemctl restart nginx
 systemctl daemon-reload
+systemctl restart nginx
 ufw allow 'Nginx Full'
 
