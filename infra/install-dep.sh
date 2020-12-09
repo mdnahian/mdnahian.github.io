@@ -29,6 +29,10 @@ systemctl restart nginx
 ufw enable
 ufw allow 'Nginx Full'
 
+until $(curl --output /dev/null --silent --head --fail mdislam.com); do
+    printf '.'
+    sleep 5
+done
 
 certbot -n --nginx -d ${APP_NAME} -d www.${APP_NAME} --email hello@mdislam.com --agree-tos
 

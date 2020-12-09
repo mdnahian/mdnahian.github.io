@@ -33,7 +33,7 @@ module "security_group" {
   egress_rules        = ["all-all"]
 }
 
-resource "aws_eip" "this" {
+resource "aws_eip" "ec2_elastic_ip" {
   vpc      = true
   instance = aws_instance.web.id
 }
@@ -49,4 +49,8 @@ resource "aws_instance" "web" {
     Type = "website"
   }
   vpc_security_group_ids = [module.security_group.this_security_group_id]
+}
+
+output "aws_elastic_ip" {
+  value       = aws_eip.ec2_elastic_ip.public_ip
 }
