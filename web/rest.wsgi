@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/opt/www/venv/mdislam.com/bin/python
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
