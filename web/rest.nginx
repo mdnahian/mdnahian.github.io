@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name mdislam.com www.mdislam.com;
+    server_name mdislam.com www.mdislam.com localhost;
 
     location / {
         include uwsgi_params;
