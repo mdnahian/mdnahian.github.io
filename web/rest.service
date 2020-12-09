@@ -7,7 +7,7 @@ User=www-data
 Group=www-data
 WorkingDirectory=/opt/www/mdislam.com/
 Environment="PATH=/opt/www/venv/mdislam.com/bin"
-ExecStart=/opt/www/venv/mdislam.com/bin/uwsgi --ini /opt/www/mdislam.com/web/rest.ini
+ExecStart=/opt/www/venv/mdislam.com/bin/uwsgi --uid www-data --gid www-data --ini /opt/www/mdislam.com/web/rest.ini
 
 [Install]
 WantedBy=multi-user.target
