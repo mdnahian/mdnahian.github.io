@@ -18,7 +18,7 @@ mkdir -p /var/log/uwsgi
 mv ${INSTALL_DIR}/${APP_NAME}/web/rest.service /etc/systemd/system/mdislam.service
 chown -R www-data:www-data /var/log/uwsgi
 chown -R www-data:www-data ${INSTALL_DIR}
-systemctl start mdislam
+systemctl restart mdislam
 systemctl enable mdislam
 
 mv  ${INSTALL_DIR}/${APP_NAME}/web/rest.nginx /etc/nginx/sites-available/mdislam.com
