@@ -44,9 +44,9 @@ body{
 	border-radius: 50px;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
-	background: url(../images/profile.jpg) no-repeat;
-	background-size:100px 100px;
-	background-position:left top;
+	background: url(../images/profile.png) no-repeat;
+	background-size:110px 100px;
+	background-position:center;
 }
 
 .outer-circular{
