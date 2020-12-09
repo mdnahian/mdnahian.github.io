@@ -6,7 +6,7 @@ rm -rf ${INSTALL_DIR}/${APP_NAME}
 mkdir -p ${INSTALL_DIR}
 
 apt update
-apt install -y python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools python3-venv nginx
+apt install -y python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools python3-venv nginx certbot python3-certbot-nginx
 git clone https://github.com/mdnahian/${APP_NAME}.git ${INSTALL_DIR}/${APP_NAME}
 rm -rf ${INSTALL_DIR}/venv/${APP_NAME}
 mkdir -p ${INSTALL_DIR}/venv
@@ -26,5 +26,9 @@ ln -sf /etc/nginx/sites-available/mdislam.com /etc/nginx/sites-enabled
 nginx -t
 systemctl daemon-reload
 systemctl restart nginx
+ufw enable
 ufw allow 'Nginx Full'
+
+
+certbot -n --nginx -d ${APP_NAME} -d www.${APP_NAME} --email hello@mdislam.com --agree-tos
 
