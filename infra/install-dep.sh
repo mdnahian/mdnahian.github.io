@@ -12,11 +12,11 @@ mkdir -p ${INSTALL_DIR}/venv
 python3 -m venv ${INSTALL_DIR}/venv/${APP_NAME}
 ${INSTALL_DIR}/venv/${APP_NAME}/bin/pip install -r ${INSTALL_DIR}/${APP_NAME}/web/requirements.txt
 
-mv ${INSTALL_DIR}/${APP_NAME}/rest.service /etc/systemd/system/mdislam.service
+mv ${INSTALL_DIR}/${APP_NAME}/web/rest.service /etc/systemd/system/mdislam.service
 systemctl start mdislam
 systemctl enable mdislam
 
-mv  ${INSTALL_DIR}/${APP_NAME}/rest.nginx /etc/nginx/sites-available/mdislam.com
+mv  ${INSTALL_DIR}/${APP_NAME}/web/rest.nginx /etc/nginx/sites-available/mdislam.com
 ln -s /etc/nginx/sites-available/mdislam.com /etc/nginx/sites-enabled
 nginx -t
 systemctl restart nginx
