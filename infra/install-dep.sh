@@ -13,6 +13,7 @@ rm -rf ${INSTALL_DIR}/venv/${APP_NAME}
 python3 -m venv ${INSTALL_DIR}/venv/${APP_NAME}
 ${INSTALL_DIR}/venv/${APP_NAME}/bin/pip install -r ${INSTALL_DIR}/${APP_NAME}/web/requirements.txt
 
+mkdir -p /var/log/uwsgi
 mv ${INSTALL_DIR}/${APP_NAME}/web/rest.service /etc/systemd/system/mdislam.service
 systemctl start mdislam
 systemctl enable mdislam
