@@ -29,7 +29,7 @@ module "security_group" {
   vpc_id      = data.aws_vpc.default.id
 
   ingress_cidr_blocks = ["0.0.0.0/0"]
-  ingress_rules       = ["http-80-tcp", "ssh-tcp"]
+  ingress_rules       = ["http-80-tcp", "ssh-tcp", "https-443-tcp"]
   egress_rules        = ["all-all"]
 }
 
@@ -43,7 +43,7 @@ resource "aws_instance" "web" {
   instance_type    = "t2.nano"
   subnet_id        = tolist(data.aws_subnet_ids.all.ids)[0]
   key_name         = "aws"
-  user_data_base64 = base64encode(file("install-dep.sh"))
+  user_data_base64 = base64encode(file("user-data.txt"))
   tags = {
     Name = "mdislam.com"
     Type = "website"

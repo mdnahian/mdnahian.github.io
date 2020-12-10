@@ -26,6 +26,14 @@ This will create the following on AWS:
 * EBS volume
 * Security Groups
 
+# Image Annotations
+
+Run the following command to watermark images:
+
+```bash
+convert <image> -gravity center -stroke '#000C' -strokewidth 2 -annotate 0 '@mdni007' -stroke  none  -fill white -annotate 0 '@mdni007' ../mdni007.png
+```
+
 # Uninstallation
 
 ```bash
