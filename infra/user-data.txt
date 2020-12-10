@@ -41,11 +41,12 @@ systemctl enable mdislam
 
 mv  ${INSTALL_DIR}/${APP_NAME}/web/rest.nginx /etc/nginx/sites-available/mdislam.com
 ln -sf /etc/nginx/sites-available/mdislam.com /etc/nginx/sites-enabled
+rm -rf /etc/nginx/sites-available/default
 nginx -t
 systemctl daemon-reload
 systemctl restart nginx
 ufw enable
-ufw allow 'Nginx Full'
+ufw allow 'Nginx HTTPS'
 ufw allow ssh
 
 until $(curl --output /dev/null --silent --head --fail mdislam.com); do
@@ -53,5 +54,5 @@ until $(curl --output /dev/null --silent --head --fail mdislam.com); do
     sleep 5
 done
 
-certbot -n --nginx -d ${APP_NAME} -d www.${APP_NAME} --email hello@mdislam.com --agree-tos
+certbot -n --nginx -d ${APP_NAME} -d www.${APP_NAME} --email hello@mdislam.com --agree-tos --redirect
 --//
