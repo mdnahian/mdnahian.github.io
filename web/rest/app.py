@@ -1,7 +1,7 @@
 import os
 import glob
 from flask import Flask, render_template, url_for, send_from_directory, make_response
-from data import published_projects, hackathon_projects, activities
+from rest.data import published_projects, hackathon_projects, activities
 
 app = Flask(__name__, static_url_path='')
 
