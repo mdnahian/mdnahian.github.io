@@ -49,7 +49,7 @@ ufw enable
 ufw allow 'Nginx HTTPS'
 ufw allow ssh
 
-until $(curl --output /dev/null --silent --head --fail mdislam.com); do
+until $(curl --output /dev/null --silent --head --fail https://mdislam.com); do
     printf '.'
     sleep 5
 done
