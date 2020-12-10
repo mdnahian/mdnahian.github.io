@@ -6,6 +6,7 @@ The following are required before installation:
 | ----------- | ----------- | 
 | aws-cli      | 2.1.8       |   
 | terraform   | 0.14.2         |  
+| python      |      3.8.5   |
 
 Configure AWS CLI before proceeding:
 
@@ -26,12 +27,22 @@ This will create the following on AWS:
 * EBS volume
 * Security Groups
 
-# Image Annotations
+# Misc Commands
+
+### Image Annotations
 
 Run the following command to watermark images:
 
 ```bash
 convert <image> -gravity center -stroke '#000C' -strokewidth 2 -annotate 0 '@mdni007' -stroke  none  -fill white -annotate 0 '@mdni007' ../mdni007.png
+```
+
+### Run Locally
+
+To view the website locally, simply run the following command:
+
+```bash
+python3 web/rest/app.py
 ```
 
 # Uninstallation

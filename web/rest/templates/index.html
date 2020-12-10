@@ -42,7 +42,7 @@
 
   <div class="main-content">
 
-    <h3 class="title">Portfolio</h3>
+    <h3 class="title">The Things I've Built</h3>
 
     <div id="projects" class="container">
       {% for project in published_projects %}
@@ -74,7 +74,25 @@
       {% endfor %}
     </div>
 
-    <h3 class="title" style="margin-top:45px;">Activities</h3>
+    <h3 class="title" style="margin-top:90px;">The Places I've Been</h3>
+
+    <div class="container">
+      <div id="travel-photos" class="carousel">
+        {% for photo in travel_photos %}
+        <div class="slider-item">
+          <div class="card" style="width: 100%;">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="{{ photo }}" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <h3 class="title" style="margin-top:90px;">The Stuff I've Done</h3>
 
     <div id="projects" class="container" style="padding:25px; padding-top:0;">
       {% for activity in activities %}
@@ -121,14 +139,14 @@
       {% endfor %}
     </div>
 
-    <h3 class="title">Hackathon &amp; DIY Projects</h3>
+    <h3 class="title" style="margin-top: 90px;">Some More Things I've Built...</h3>
 
     <div id="projects" class="container" style="padding:25px; padding-top:0;">
       {% for project in hackathon_projects %}
-      {% if loop.index0 != 0 and loop.index0 % 4 == 0 %}
+      {% if loop.index0 != 0 and loop.index0 % 6 == 0 %}
       </div>
       {% endif %}
-      {% if loop.index0 % 4 == 0 %}
+      {% if loop.index0 % 6 == 0 %}
       <div class="columns">
       {% endif %}
       <a class="column" href="{{ project['url'] }}" target="_blank">
@@ -142,24 +160,6 @@
         </article>
       </a>
       {% endfor %}
-    </div>
-
-    <h3 class="title" style="margin-top:45px;">Travel Photos</h3>
-
-    <div class="container">
-      <div id="travel-photos" class="carousel">
-        {% for photo in travel_photos %}
-        <div class="slider-item">
-          <div class="card" style="width: 100%;">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="{{ photo }}" alt="">
-              </figure>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
     </div>
 
     

@@ -1,7 +1,7 @@
 import os
+import sys
 import glob
 from flask import Flask, render_template, url_for, send_from_directory, make_response
-from rest.data import published_projects, hackathon_projects, activities
 
 app = Flask(__name__, static_url_path='')
 
@@ -28,5 +28,8 @@ def apply_caching(response):
     return response
 
 
-if __name__ == '__main__':
-	app.run(debug=True)
+if __name__ == "__main__":
+    from data import published_projects, hackathon_projects, activities
+    app.run(debug=True)
+else:
+    from rest.data import published_projects, hackathon_projects, activities
