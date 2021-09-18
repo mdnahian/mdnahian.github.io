@@ -42,23 +42,21 @@ function buildPublishedProjects() {
 }
 
 function buildTravelPhotos() {
-    $.getJSON(travel_photos, function(data) {
-        let content = "";
-        for (let i = 0; i < data.length; i++) {
-            content += `
-            <div class="slider-item">
-                <div class="card" style="width: 100%;">
-                    <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="{{ photo }}" alt="">
-                    </figure>
-                    </div>
+    let content = "";
+    for (let i = 0; i < 23; i++) {
+        content += `
+        <div class="slider-item">
+            <div class="card" style="width: 100%;">
+                <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="data/images/travel/mdni007-`+i+`.png" alt="">
+                </figure>
                 </div>
             </div>
-            `;
-        } 
-        document.getElementById("travel-photos").innerHTML = content;
-    });
+        </div>
+        `;
+    } 
+    document.getElementById("travel-photos").innerHTML = content;
 }
 
 function buildActivities(){
