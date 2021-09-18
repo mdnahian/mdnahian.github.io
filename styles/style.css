@@ -22,7 +22,7 @@ body{
   /*border-radius:25px;*/
 }
 
-#header{
+#header {
   text-align:center;
   margin-bottom:0;
   /*background:url('../images/bg.jpg');*/
@@ -34,6 +34,10 @@ body{
 
 #header .title, #header .subtitle{
   color:#242424;
+}
+
+#aboutme {
+  text-align: left;
 }
 
 .circular {
