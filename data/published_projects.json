@@ -1,0 +1,149 @@
+[
+    {
+        "name": "Linx",
+        "url": "https://github.com/LinxSolutions",
+        "image": "images/linx.jpg",
+        "description": "Learn a new language by watching Netflix.",
+        "tags": "React-Native, Electron, Flask"
+    },
+    {
+        "name": "Phishly",
+        "url": "https://github.com/Phishly",
+        "image": "images/phishly.jpg",
+        "description": "Train your employees through custom spear phishing attacks.",
+        "tags": "React, Flask, Tensorflow"
+    },
+    {
+        "name": "NakedBear",
+        "url": "https://github.com/naked-bear",
+        "image": "images/nakedbear.png",
+        "description": "Generate a secure url for any file on your computer to share it with the world.",
+        "tags": "React, Electron, Flask"
+    },
+    {
+        "name": "Impulse Hack",
+        "url": "https://itunes.apple.com/us/app/impulsehacker/id1251164412?mt=8",
+        "image": "images/impulsehack.png",
+        "description": "Mobile application to register and track impulses.",
+        "tags": "React-Native, D3.js, Sketch"
+    },
+    {
+        "name": "OpIn",
+        "url": "https://chrome.google.com/webstore/detail/opin-comment-anywhere/fenapelkfdoiabgffckohbbfggldadek?hl=en-US&gl=US",
+        "image": "images/opin.jpg",
+        "description": "Chrome extension used to comment on any website.",
+        "tags": "JavaScript, MongoDB, AWS"
+    },
+    {
+        "name": "Passcode",
+        "url": "#",
+        "image": "images/passcode.jpg",
+        "description": "Android app that saves all your passwords locally on your device.",
+        "tags": "Java"
+    },
+    {
+        "name": "Easy Build",
+        "url": "#",
+        "image": "images/easy_build.jpg",
+        "description": "Install and run your Android app more efficiently.",
+        "tags": "Java, Dropbox API"
+    },
+    {
+        "name": "1Step Search",
+        "url": "#",
+        "image": "images/1step_search.png",
+        "description": "Search and download videos, music, photos and more.",
+        "tags": "Java, Python, PHP, MySQL, PayPal API"
+    },
+    {
+        "name": "Peer Wifi",
+        "url": "https://devpost.com/software/peer-wifi-x8clai",
+        "image": "images/peer_wifi.png",
+        "description": "Buy and sell your mobile hotspot data through tethering.",
+        "tags": "Java, Python, AWS, MongoDB"
+    },
+    {
+        "name": "Rutgers Newark: Bus or Rail",
+        "url": "https://github.com/mdnahian/RutgersBusOrRail",
+        "image": "images/runbusorrail.png",
+        "description": "Should I take the Rutgers Bus or the Newark Light Rail?",
+        "tags": "React Native, Python"
+    },
+    {
+        "name": "Free College PDFs",
+        "url": "#",
+        "image": "images/freecollegepdfs.png",
+        "description": "Download and upload college textbooks for free.",
+        "tags": "PHP, JavaScript, MySQL"
+    },
+    {
+        "name": "HackRUN",
+        "url": "https://github.com/mdnahian/HackRUN",
+        "image": "images/hackrun.png",
+        "description": "The first hackathon at Rutgers University Newark.",
+        "tags": "Python, JavaScript, MailChimp"
+    },
+    {
+        "name": "Pinetree",
+        "url": "https://github.com/mdnahian/Pinetree",
+        "image": "images/pinetree.png",
+        "description": "Message people in your area anonymously for free.",
+        "tags": "React Native, Firebase"
+    },
+    {
+        "name": "Emotification",
+        "url": "https://github.com/mdnahian/Emotification",
+        "image": "images/emotification.png",
+        "description": "Hear emotionally informed notification tones on Android.",
+        "tags": "Java, Python, AWS, Natural Language Processing"
+    },
+    {
+        "name": "Screengif",
+        "url": "https://play.google.com/store/apps/details?id=com.mdislam.screengiff",
+        "image": "images/screengif.png",
+        "description": "Record and Share Your Phone Screen as a GIF.",
+        "tags": "Java, FFMPEG"
+    },
+    {
+        "name": "Workspaces",
+        "url": "https://chrome.google.com/webstore/detail/workspaces/eehocaoejekpmecmfecdkpohdkgkmoee",
+        "image": "images/workspaces.png",
+        "description": "Save all your current tabs and come back to them later.",
+        "tags": "JavaScipt"
+    },
+    {
+        "name": "GitReacts",
+        "url": "https://chrome.google.com/webstore/detail/gitreacts/lfjdffifadldpedgddbnaehkecnocdhb",
+        "image": "images/gitreacts.png",
+        "description": "Facebook-like reactions for GitHub repositories.",
+        "tags": "Flask, JavaScript, MongoDB"
+    },
+    {
+        "name": "Newark LSAMP",
+        "url": "http://newark.gslsamp.rutgers.edu",
+        "image": "images/lsamp.jpg",
+        "description": "Website for LSAMP program in Rutgers University Newark.",
+        "tags": "PHP, JavaScript, MySQL"
+    },
+    {
+        "name": "jsblocks",
+        "url": "https://chrome.google.com/webstore/detail/jsblocks/icpmhilfekpdgkfliliocpagfleebggh",
+        "image": "images/jsblocks.png",
+        "description": "Simple way to block annoying content on any website.",
+        "tags": "JavaScript"
+    },
+    {
+        "name": "Salus Mind",
+        "url": "https://github.com/SalusMind",
+        "image": "images/salusmind.png",
+        "description": "Mental health monitoring service to save lives",
+        "tags": "React, Flask, IBM Watson"
+    },
+    {
+        "name": "Cevo TMS",
+        "url": "https://github.com/cevo-tms",
+        "image": "images/cevotms.png",
+        "description": "Simple transportaion management service",
+        "tags": "React Native, Flask, MongoDB, Docker"
+    }
+]
