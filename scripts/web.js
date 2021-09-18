@@ -1,6 +1,5 @@
 const published_projects = "data/published_projects.json";
 const hackathon_projects = "data/hackathon_projects.json";
-const travel_photos = "";
 const activities = "data/activities.json";
 
 function buildPublishedProjects() {
@@ -49,7 +48,7 @@ function buildTravelPhotos() {
             <div class="card" style="width: 100%;">
                 <div class="card-image">
                 <figure class="image is-4by3">
-                    <img src="data/images/travel/mdni007-`+i+`.png" alt="">
+                    <img src="images/travel/mdni007-`+i+`.png" alt="">
                 </figure>
                 </div>
             </div>
@@ -77,7 +76,7 @@ function buildActivities(){
                         <div class="title is-5">`+data[i].title+`</div>
                         `+description+`
                         <p style="text-align:right;">
-                            <a href="`+data[i].link+`" class="button is-medium is-dark" style="color:#ffffff;">`+data[i].link-text+`</a>
+                            <a href="`+data[i].link+`" class="button is-medium is-dark" style="color:#ffffff;">`+data[i].text+`</a>
                         </p>
                     </div>
                 </div>
@@ -92,7 +91,7 @@ function buildActivities(){
                         <div class="title is-5">`+data[i].title+`</div>
                         `+description+`
                         <p style="text-align:right;">
-                            <a href="{{ activity['link'] }}" class="button is-medium is-dark" style="color:#ffffff;">`+data[i].link-text+`</a>
+                            <a href="`+data[i].link+`" class="button is-medium is-dark" style="color:#ffffff;">`+data[i].text+`</a>
                         </p>
                     </div>
                     <div class="column is-hidden-touch">

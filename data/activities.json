@@ -7,7 +7,7 @@
         ],
         "image": "images/hackny.jpg",
         "link": "http://hackny.org/2016/05/spring-2016-hackny-hackathon-winners-demo-at-new-york-tech-meetup/",
-        "link-text": "Read More »"
+        "text": "Read More »"
     },
     {
         "title": "StartupBus North America 2017",
@@ -17,7 +17,7 @@
         ],
         "image": "images/startupbus.jpg",
         "link": "https://gimletmedia.com/episode/startupbus-part-1-monday/",
-        "link-text": "Listen Podcast »"
+        "text": "Listen Podcast »"
     },
     {
         "title": "AngelHack's Hackcelerator 2017",
@@ -27,6 +27,6 @@
         ],
         "image": "images/hackcelerator.jpg",
         "link": "https://angelhack.com/2017/09/27/hackcelerator2017/",
-        "link-text": "Read More »"
+        "text": "Read More »"
     }
 ]
