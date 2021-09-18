@@ -1,9 +1,7 @@
-const published_projects = "D:/Projects/personal/mdislam.com/data/published_projects.json";
-const hackathon_projects = "D:/Projects/personal/mdislam.com/data/hackathon_projects.json";
+const published_projects = "data/published_projects.json";
+const hackathon_projects = "data/hackathon_projects.json";
 const travel_photos = "";
-const activities = "D:/Projects/personal/mdislam.com/data/activities.json";
-
-
+const activities = "data/activities.json";
 
 function buildPublishedProjects() {
     $.getJSON(published_projects, function(data) {
