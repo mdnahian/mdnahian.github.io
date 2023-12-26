@@ -40,22 +40,12 @@ function buildPublishedProjects() {
     });
 }
 
-function buildTravelPhotos() {
-    let content = "";
-    for (let i = 0; i < 23; i++) {
-        content += `
-        <div class="slider-item">
-            <div class="card" style="width: 100%;">
-                <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="images/travel/mdni007-`+i+`.png" alt="">
-                </figure>
-                </div>
-            </div>
-        </div>
-        `;
-    } 
-    document.getElementById("travel-photos").innerHTML = content;
+function updateTravelPhotos() {
+    let imageNumber = Math.floor(Math.random() * 23);
+    $('#travel-photos').delay(500).fadeTo(500, 0.5, "swing", function()
+    {
+        $(this).css('background-image', `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/travel/mdni007-`+imageNumber+`.png')`);
+    }).fadeTo('slow', 1);
 }
 
 function buildActivities(){
