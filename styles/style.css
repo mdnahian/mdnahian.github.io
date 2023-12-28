@@ -3,7 +3,6 @@ html{
 }
 
 body{
-    margin:15px;
     overflow-x:hidden;
 }
 
@@ -124,9 +123,4 @@ body{
 
 .social-btns {
   margin-bottom: 0 !important;
-}
-
-.hero-foot {
-  position: relative;
-  top: -15px;
 }
