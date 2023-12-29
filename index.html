@@ -98,11 +98,20 @@
 
         ga('create', 'UA-68990077-1', 'auto');
         ga('send', 'pageview');
-
     </script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/web.js"></script>
     <script>
+        var photoNums = Array.from(Array(152).keys());
+        for (var i = photoNums.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = photoNums[i];
+            photoNums[i] = photoNums[j];
+            photoNums[j] = temp;
+        }
+        let imageNum1 = 0;
+        let imageNum2 = 1;
+        let imageNum3 = 2;
         function ready(handler) {
             if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
                 handler();
@@ -111,8 +120,8 @@
             }
         }
         ready(function () {
-            updateTravelPhotos();
-            setInterval(updateTravelPhotos, 8000);
+            updateTravelPhotos()
+            setInterval(updateTravelPhotos, 3000);
             buildPublishedProjects();
             buildActivities();
             buildHackathonProjects();

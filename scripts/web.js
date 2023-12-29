@@ -41,11 +41,18 @@ function buildPublishedProjects() {
 }
 
 function updateTravelPhotos() {
-    let imageNumber = Math.floor(Math.random() * 23);
-    $('#travel-photos').delay(500).fadeTo(500, 0.5, "swing", function()
+    $('#travel-photos').delay(700).fadeTo(500, 0.9, "swing", function()
     {
-        $(this).css('background-image', `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/travel/mdni007-`+imageNumber+`.png')`);
+        $(this).css('background-image', `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/travel/mdni007-`+photoNums[imageNum2]+`.heic'), url('images/travel/mdni007-`+photoNums[imageNum3]+`.heic'), url('images/travel/mdni007-`+photoNums[imageNum1]+`.heic')`);
     }).fadeTo('slow', 1);
+    imageNum1++;
+    imageNum2++;
+    imageNum3++;
+    if (imageNum3 >= 151) {
+        imageNum1 = 0;
+        imageNum2 = 1;
+        imageNum3 = 2;
+    }
 }
 
 function buildActivities(){

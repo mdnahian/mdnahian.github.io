@@ -6,11 +6,12 @@ html,body {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         ), no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin-bottom: -15px;
+    -webkit-background-size: auto 100%, auto 100%, auto 100%;
+    -moz-background-size: auto 100%, auto 100%, auto 100%;
+    -o-background-size: auto 100%, auto 100%, auto 100%;
+    background-size: auto 100%, auto 100%, auto 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right bottom, center bottom, left bottom;
 }
 .hero .nav, .hero.is-success .nav {
     -webkit-box-shadow: none;
