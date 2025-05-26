@@ -9,9 +9,26 @@ class Timeline {
     async init() {
         if (this.timelineContainer) {
             await this.loadTimelineData();
+            // Preserve the section header and add wrapper for timeline items
+            const header = this.timelineContainer.querySelector('.section-header');
+            this.timelineContainer.innerHTML = `
+                ${header ? header.outerHTML : ''}
+                <div class="timeline-wrapper"></div>
+            `;
+            this.timelineWrapper = this.timelineContainer.querySelector('.timeline-wrapper');
             this.renderTimeline();
             this.setupAnimations();
         }
+    }
+    
+    sortTimelineData() {
+        return this.timelineData.sort((a, b) => {
+            // Convert dates to comparable format (YYYY-MM)
+            const dateA = new Date(a.date + " 1"); // Add day to make valid date
+            const dateB = new Date(b.date + " 1");
+            // Sort in descending order (newest first)
+            return dateB - dateA;
+        });
     }
     
     async loadTimelineData() {
@@ -21,6 +38,8 @@ class Timeline {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             this.timelineData = await response.json();
+            // Sort the timeline data chronologically
+            this.timelineData = this.sortTimelineData();
         } catch (error) {
             console.error('Error loading timeline data:', error);
             // Fallback to empty array or show error message
@@ -43,7 +62,7 @@ class Timeline {
         // Add all timeline items
         this.timelineData.forEach((item, index) => {
             const timelineItem = this.createTimelineItem(item, index);
-            this.timelineContainer.appendChild(timelineItem);
+            this.timelineWrapper.appendChild(timelineItem);
         });
     }
     
@@ -52,11 +71,8 @@ class Timeline {
         timelineItem.className = 'timeline-item fade-in';
         timelineItem.dataset.type = item.type;
         
-        const iconClass = this.getIconClass(item.type);
-        
         timelineItem.innerHTML = `
             <div class="timeline-date">
-                <i class="${iconClass}"></i>
                 ${item.date}
             </div>
             <div class="timeline-content">
@@ -132,7 +148,7 @@ class Timeline {
                     entry.target.classList.add('visible');
                     
                     // Add staggered animation delay
-                    const items = Array.from(this.timelineContainer.querySelectorAll('.timeline-item'));
+                    const items = Array.from(this.timelineWrapper.querySelectorAll('.timeline-item'));
                     const index = items.indexOf(entry.target);
                     entry.target.style.animationDelay = `${index * 0.1}s`;
                 }
@@ -140,7 +156,7 @@ class Timeline {
         }, observerOptions);
         
         // Observe all timeline items
-        const timelineItems = this.timelineContainer.querySelectorAll('.timeline-item');
+        const timelineItems = this.timelineWrapper.querySelectorAll('.timeline-item');
         timelineItems.forEach(item => {
             observer.observe(item);
         });
@@ -150,7 +166,7 @@ class Timeline {
     }
     
     addHoverEffects() {
-        const timelineItems = this.timelineContainer.querySelectorAll('.timeline-item');
+        const timelineItems = this.timelineWrapper.querySelectorAll('.timeline-item');
         
         timelineItems.forEach(item => {
             const content = item.querySelector('.timeline-content');
@@ -169,7 +185,7 @@ class Timeline {
     
     // Method to filter timeline by type
     filterByType(type) {
-        const items = this.timelineContainer.querySelectorAll('.timeline-item');
+        const items = this.timelineWrapper.querySelectorAll('.timeline-item');
         
         items.forEach(item => {
             if (type === 'all' || item.dataset.type === type) {
@@ -183,7 +199,7 @@ class Timeline {
     
     // Method to search timeline
     search(query) {
-        const items = this.timelineContainer.querySelectorAll('.timeline-item');
+        const items = this.timelineWrapper.querySelectorAll('.timeline-item');
         const searchTerm = query.toLowerCase();
         
         items.forEach(item => {
@@ -231,6 +247,102 @@ class Timeline {
 function addTimelineStyles() {
     const style = document.createElement('style');
     style.textContent = `
+        .timeline-wrapper {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Vertical timeline line */
+        .timeline-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #e5e7eb;
+            transform: translateX(-50%);
+            border-left: 2px dashed #e5e7eb;
+            background: none;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .timeline-date {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background-color: #fff;
+            color: var(--text-primary);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 500;
+            z-index: 1;
+            border: 2px solid #e5e7eb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content {
+            width: 100%;
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+            margin-right: 4rem;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: auto;
+            margin-left: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-wrapper {
+                padding: 1rem;
+            }
+
+            /* Hide the timeline line on mobile */
+            .timeline-wrapper::before {
+                display: none;
+            }
+
+            .timeline-item {
+                margin-bottom: 2rem;
+                display: block;
+            }
+
+            .timeline-date {
+                display: none;
+            }
+
+            .timeline-content {
+                width: 100%;
+                margin: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            /* Reset alternating layout */
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin: 0 !important;
+            }
+        }
+        
         .timeline-header {
             display: flex;
             justify-content: space-between;
@@ -353,29 +465,6 @@ function addTimelineStyles() {
         
         .timeline-link {
             margin-top: 0.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .tech-tags {
-                gap: 0.2rem;
-            }
-            
-            .tech-tag {
-                font-size: 0.7rem;
-                padding: 0.2rem 0.5rem;
-            }
-            
-            .timeline-image img {
-                max-height: 100px;
-            }
-            
-            .timeline-title {
-                font-size: 1rem;
-            }
-            
-            .timeline-description {
-                font-size: 0.85rem;
-            }
         }
         
         /* Animation for timeline items */
