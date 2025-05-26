@@ -2,10 +2,10 @@
     {
         "title": "Presented at NY Tech Meetup May 2016",
         "description": [
-            "\"On Tuesday, May 3rd, three of the Spring 2016 hackNY Student Hackathon‘s winning teams presented at the New York Tech Meetup to a theater packed with local technologists. Accent, the first place winners, and Peer Wifi, the third place winners, were joined by Drone Regulator, winners of our traditional 8-breaker creativity prize.\"",
+            "\"On Tuesday, May 3rd, three of the Spring 2016 hackNY Student Hackathon's winning teams presented at the New York Tech Meetup to a theater packed with local technologists. Accent, the first place winners, and Peer Wifi, the third place winners, were joined by Drone Regulator, winners of our traditional 8-breaker creativity prize.\"",
             "\"Andy Yu, Md Islam, and Minh Tuan Tran demoed their mobile app, Peer Wifi, which allows users to sell their excess mobile data to others by letting them connect to their mobile hotspots. Users selling their data set prices for usage time and data caps, and users in the vicinity can pay with Paypal or a credit card to connect. The audience laughed and cheered when they demonstrated their live demo had worked by loading a cat video compilation.\""
         ],
-        "image": "images/hackny.jpg",
+        "image": "assets/images/hackny.jpg",
         "link": "http://hackny.org/2016/05/spring-2016-hackny-hackathon-winners-demo-at-new-york-tech-meetup/",
         "text": "Read More »"
     },
@@ -15,7 +15,7 @@
             "\"This past summer, 20 strangers got on a charter bus headed from New York to New Orleans. For three days they had one goal: Build and launch companies from inside the bus. And then? Compete against each other.\" - Gimlet Media",
             "\"Founded in 2010, StartupBus is building an entrepreneurial ecosystem through unique experiences and inspirational connections. A community run organisation, the underlying vision to all activities is to empower the people that create change in the world and disrupt the status quo.\""
         ],
-        "image": "images/startupbus.jpg",
+        "image": "assets/images/startupbus.jpg",
         "link": "https://gimletmedia.com/shows/startup/5whm24/introducing-startupbus",
         "text": "Listen Podcast »"
     },
@@ -25,8 +25,8 @@
             "\"The winning teams from the 55 hackathons we held this Summer all received an invite into our pre-accelerator program, and 37 of them are now in the early-stages of becoming a real startup.\"",
             "\"Over the next twelve weeks they will learn how to take their hackathon prototype to startup reality through our rigorous curriculum, and the wisdom and guidance of expert speakers and mentors.\""
         ],
-        "image": "images/hackcelerator.jpg",
+        "image": "assets/images/hackcelerator.jpg",
         "link": "https://angelhack.com/2017/09/27/hackcelerator2017/",
         "text": "Read More »"
     }
-]
+] 

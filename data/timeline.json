@@ -1,0 +1,280 @@
+[
+  {
+    "date": "unknown",
+    "title": "Linx",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Learn a new language by watching Netflix.",
+    "technologies": ["React-Native", "Electron", "Flask"],
+    "link": "https://github.com/LinxSolutions",
+    "image": "assets/images/linx.jpg"
+  },
+  {
+    "date": "unknown",
+    "title": "Phishly",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Train your employees through custom spear phishing attacks.",
+    "technologies": ["React", "Flask", "Tensorflow"],
+    "link": "https://github.com/Phishly",
+    "image": "assets/images/phishly.jpg"
+  },
+  {
+    "date": "unknown",
+    "title": "NakedBear",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Generate a secure url for any file on your computer to share it with the world.",
+    "technologies": ["React", "Electron", "Flask"],
+    "link": "https://github.com/naked-bear",
+    "image": "assets/images/nakedbear.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Impulse Hack",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Mobile application to register and track impulses.",
+    "technologies": ["React-Native", "D3.js", "Sketch"],
+    "link": "https://itunes.apple.com/us/app/impulsehacker/id1251164412?mt=8",
+    "image": "assets/images/impulsehack.png"
+  },
+  {
+    "date": "unknown",
+    "title": "OpIn",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Chrome extension used to comment on any website.",
+    "technologies": ["JavaScript", "MongoDB", "AWS"],
+    "link": "https://chrome.google.com/webstore/detail/opin-comment-anywhere/fenapelkfdoiabgffckohbbfggldadek?hl=en-US&gl=US",
+    "image": "assets/images/opin.jpg"
+  },
+  {
+    "date": "unknown",
+    "title": "Screengif",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Record and Share Your Phone Screen as a GIF.",
+    "technologies": ["Java", "FFMPEG"],
+    "link": "https://play.google.com/store/apps/details?id=com.mdislam.screengiff",
+    "image": "assets/images/screengif.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Peer Wifi",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Buy and sell your mobile hotspot data through tethering.",
+    "technologies": ["Java", "Python", "AWS", "MongoDB"],
+    "link": "https://devpost.com/software/peer-wifi-x8clai",
+    "image": "assets/images/peer_wifi.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Workspaces",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Save all your current tabs and come back to them later.",
+    "technologies": ["JavaScript"],
+    "link": "https://chrome.google.com/webstore/detail/workspaces/eehocaoejekpmecmfecdkpohdkgkmoee",
+    "image": "assets/images/workspaces.png"
+  },
+  {
+    "date": "unknown",
+    "title": "GitReacts",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Facebook-like reactions for GitHub repositories.",
+    "technologies": ["Flask", "JavaScript", "MongoDB"],
+    "link": "https://chrome.google.com/webstore/detail/gitreacts/lfjdffifadldpedgddbnaehkecnocdhb",
+    "image": "assets/images/gitreacts.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Pinetree",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Message people in your area anonymously for free.",
+    "technologies": ["React Native", "Firebase"],
+    "link": "https://github.com/mdnahian/Pinetree",
+    "image": "assets/images/pinetree.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Emotification",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Hear emotionally informed notification tones on Android.",
+    "technologies": ["Java", "Python", "AWS", "Natural Language Processing"],
+    "link": "https://github.com/mdnahian/Emotification",
+    "image": "assets/images/emotification.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Passcode",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Android app that saves all your passwords locally on your device.",
+    "technologies": ["Java"],
+    "image": "assets/images/passcode.jpg"
+  },
+  {
+    "date": "unknown",
+    "title": "Easy Build",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Install and run your Android app more efficiently.",
+    "technologies": ["Java", "Dropbox API"],
+    "image": "assets/images/easy_build.jpg"
+  },
+  {
+    "date": "unknown",
+    "title": "1Step Search",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Search and download videos, music, photos and more.",
+    "technologies": ["Java", "Python", "PHP", "MySQL", "PayPal API"],
+    "image": "assets/images/1step_search.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Rutgers Newark: Bus or Rail",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Should I take the Rutgers Bus or the Newark Light Rail?",
+    "technologies": ["React Native", "Python"],
+    "link": "https://github.com/mdnahian/RutgersBusOrRail",
+    "image": "assets/images/runbusorrail.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Free College PDFs",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Download and upload college textbooks for free.",
+    "technologies": ["PHP", "JavaScript", "MySQL"],
+    "image": "assets/images/freecollegepdfs.png"
+  },
+  {
+    "date": "unknown",
+    "title": "HackRUN",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "The first hackathon at Rutgers University Newark.",
+    "technologies": ["Python", "JavaScript", "MailChimp"],
+    "link": "https://github.com/mdnahian/HackRUN",
+    "image": "assets/images/hackrun.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Newark LSAMP",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Website for LSAMP program in Rutgers University Newark.",
+    "technologies": ["PHP", "JavaScript", "MySQL"],
+    "link": "http://newark.gslsamp.rutgers.edu",
+    "image": "assets/images/lsamp.jpg"
+  },
+  {
+    "date": "unknown",
+    "title": "jsblocks",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Simple way to block annoying content on any website.",
+    "technologies": ["JavaScript"],
+    "link": "https://chrome.google.com/webstore/detail/jsblocks/icpmhilfekpdgkfliliocpagfleebggh",
+    "image": "assets/images/jsblocks.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Salus Mind",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Mental health monitoring service to save lives",
+    "technologies": ["React", "Flask", "IBM Watson"],
+    "link": "https://github.com/SalusMind",
+    "image": "assets/images/salusmind.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Cevo TMS",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Simple transportaion management service",
+    "technologies": ["React Native", "Flask", "MongoDB", "Docker"],
+    "link": "https://github.com/cevo-tms",
+    "image": "assets/images/cevotms.png"
+  },
+  {
+    "date": "unknown",
+    "title": "Taylr",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "Your personal assistant for interview preparation, tailored just for you.",
+    "technologies": ["Python", "Flask", "Bluemix", "HTML", "CSS", "JavaScript", "Sketch", "Alexa", "IoT", "Natural Language Processing", "Amazon Web Services"],
+    "link": "https://devpost.com/software/taylor"
+  },
+  {
+    "date": "unknown",
+    "title": "Rx?",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "Android app that allows its user to identify the use and dosage of a prescription drug by taking a picture of it.",
+    "technologies": ["Python", "Socket.io", "Android Studio", "Microsoft Cognitive Services", "Flask", "DrugBankPlus", "OpenFDA", "Natural Language Processing", "Computer Vision"],
+    "link": "https://devpost.com/software/rx"
+  },
+  {
+    "date": "unknown",
+    "title": "CUNYSlackers (CUNY Discourse)",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "Aggregates and summarizes, using NLP, a classroom's worth of notes into key concepts to inform the college student.",
+    "technologies": ["HTML5", "CSS", "jQuery", "Bulma", "Node.js", "Firebase", "Bluemix", "Python", "AlchemyAPI"],
+    "link": "https://devpost.com/software/cunyslackers-cuny-discourse"
+  },
+  {
+    "date": "unknown",
+    "title": "FitBet",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "Stay motivated (and get paid) to hit the gym.",
+    "technologies": ["Java", "Android Studio", "Firebase", "MarvelApp", "Nessie"],
+    "link": "https://devpost.com/software/fitbet-u0zhrq"
+  },
+  {
+    "date": "unknown",
+    "title": "Layterms",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "TL;DR for privacy policies so users can be informed of the data they share",
+    "technologies": ["Google Cloud", "Natural Language Processing", "Flask", "Python", "JavaScript", "Chrome"],
+    "link": "https://devpost.com/software/layterms"
+  },
+  {
+    "date": "unknown",
+    "title": "Focus",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "Selective noise-cancelling headphones",
+    "technologies": ["PyAudioAnalysis", "Python", "Raspberry Pi", "W3", "HTML5", "Machine Learning", "Socket.io", "Flask", "JavaScript", "Adobe Creative Suite", "Photoshop"],
+    "link": "https://devpost.com/software/focus-xr5hpf"
+  },
+  {
+    "date": "unknown",
+    "title": "Päwprint",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "A service to help owners find their lost pets using image recognition and public cameras",
+    "technologies": ["JavaScript", "Twilio", "OpenCV", "Python", "Flask", "Docker", "Azure", "HTML5", "CSS3", "MySQL"],
+    "link": "https://devpost.com/software/pawprint"
+  },
+  {
+    "date": "unknown",
+    "title": "Good₿Miner",
+    "organization": "Hackathon Project",
+    "type": "project",
+    "description": "Crowdfunding & fundraising by mining cryptocurrency on the browser",
+    "technologies": ["Python", "JavaScript", "MongoDB", "Amazon Web Services"],
+    "link": "https://devpost.com/software/good-miner"
+  }
+] 

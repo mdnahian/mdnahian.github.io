@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <!-- Bento Box Base with padding for better display -->
+    <rect x="30" y="30" width="140" height="140" rx="8" ry="8" 
+          fill="#326CE5" stroke="#1D54C5" stroke-width="4"/>
+    
+    <!-- Left Side Compartments -->
+    <path d="M40 40 h55 v55 h-55 v-55 z" 
+          fill="#4A7BE8" stroke="#326CE5" stroke-width="2"/>
+    <path d="M40 100 h55 v60 h-55 v-60 z" 
+          fill="#6289EB" stroke="#326CE5" stroke-width="2"/>
+          
+    <!-- Top Right Compartments -->
+    <path d="M100 40 h60 v35 h-60 v-35 z" 
+          fill="#7A98EE" stroke="#326CE5" stroke-width="2"/>
+    
+    <!-- Middle Right Compartments -->
+    <path d="M100 80 h28 v40 h-28 v-40 z" 
+          fill="#8BA7F1" stroke="#326CE5" stroke-width="2"/>
+    <path d="M132 80 h28 v40 h-28 v-40 z" 
+          fill="#9CB6F4" stroke="#326CE5" stroke-width="2"/>
+    
+    <!-- Bottom Right Compartment -->
+    <path d="M100 125 h60 v35 h-60 v-35 z" 
+          fill="#ADD5F7" stroke="#326CE5" stroke-width="2"/>
+</svg> 
