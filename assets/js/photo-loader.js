@@ -169,8 +169,7 @@ class PhotoLoader {
                 loading="lazy"
             >
             <div class="photo-overlay">
-                <p>${photo.caption}</p>
-                <span class="photo-date">${this.formatDate(photo.date)}</span>
+                <p>${this.formatDate(photo.date)}</p>
             </div>
         `;
         
@@ -311,8 +310,7 @@ class PhotoLoader {
                 <button class="lightbox-close">&times;</button>
                 <img src="${photo.url}" alt="${photo.caption}">
                 <div class="lightbox-info">
-                    <h3>${photo.caption}</h3>
-                    <span class="lightbox-date">${this.formatDate(photo.date)}</span>
+                    <p>${this.formatDate(photo.date)}</p>
                 </div>
             </div>
             <div class="lightbox-backdrop"></div>
@@ -340,7 +338,7 @@ class PhotoLoader {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.7);
         `;
         
         const content = lightbox.querySelector('.lightbox-content');
@@ -348,11 +346,12 @@ class PhotoLoader {
             position: relative;
             max-width: 90vw;
             max-height: 90vh;
-            background: white;
+            background: transparent;
             border-radius: 0.5rem;
             overflow: hidden;
             transform: scale(0.9);
             transition: transform 0.3s ease;
+            z-index: 1;
         `;
         
         const closeBtn = lightbox.querySelector('.lightbox-close');
@@ -368,20 +367,28 @@ class PhotoLoader {
             border-radius: 50%;
             font-size: 1.5rem;
             cursor: pointer;
-            z-index: 1;
+            z-index: 2;
         `;
         
         const img = lightbox.querySelector('img');
         img.style.cssText = `
             width: 100%;
             height: auto;
-            max-height: 70vh;
+            max-height: 90vh;
             object-fit: contain;
+            display: block;
         `;
         
         const info = lightbox.querySelector('.lightbox-info');
         info.style.cssText = `
-            padding: 1.5rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
         `;
         
         document.body.appendChild(lightbox);
