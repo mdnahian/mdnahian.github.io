@@ -124,8 +124,6 @@ function initContactForm() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             const formData = new FormData(contactForm);
             const name = formData.get('name');
             const email = formData.get('email');
@@ -133,29 +131,21 @@ function initContactForm() {
             
             // Basic validation
             if (!name || !email || !message) {
+                e.preventDefault();
                 showNotification('Please fill in all fields.', 'error');
                 return;
             }
             
             if (!isValidEmail(email)) {
+                e.preventDefault();
                 showNotification('Please enter a valid email address.', 'error');
                 return;
             }
             
-            // Simulate form submission (replace with actual form handling)
+            // If validation passes, let the form submit naturally to FormSubmit
             const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
-            
-            // Simulate API call
-            setTimeout(() => {
-                showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-                contactForm.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
         });
     }
 }
