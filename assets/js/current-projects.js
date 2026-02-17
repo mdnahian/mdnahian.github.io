@@ -43,7 +43,7 @@ class CurrentProjects {
         
         // Add all project items
         this.projectsData.forEach((project, index) => {
-            const projectCard = this.createProjectCard(project, index === 0);
+            const projectCard = this.createProjectCard(project, false);
             this.projectsContainer.appendChild(projectCard);
         });
     }

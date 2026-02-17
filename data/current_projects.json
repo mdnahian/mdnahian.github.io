@@ -1,11 +1,20 @@
 [
   {
-    "title": "KubeBento",
+    "title": "CheckMyLink",
     "organization": "Personal Project",
     "type": "project",
-    "description": "Your complete Kubernetes toolbox, neatly organized like a bento box. Each tool crafted to enhance your Kubernetes experience.",
-    "technologies": ["Go", "Kubernetes", "Docker"],
-    "link": "https://kubebento.com",
-    "image": "assets/images/kubebento-preview.svg"
+    "description": "Everything you are, in one simple link. A link-in-bio platform that lets you share your content, social profiles, and important information through a single, customizable link — with AI-powered themes, detailed analytics, and QR code sharing.",
+    "technologies": ["React", "AI", "Analytics"],
+    "link": "https://checkmy.link",
+    "image": "assets/images/checkmy-link.svg"
+  },
+  {
+    "title": "Superfect",
+    "organization": "Personal Project",
+    "type": "project",
+    "description": "Autonomous QA that remembers your application. Superfect explores your app, builds a persistent state graph, and detects regressions across every release — no scripts, no maintenance, just coverage.",
+    "technologies": ["AI", "QA Automation", "CI/CD"],
+    "link": "https://superfect.ai",
+    "image": "assets/images/superfect.svg"
   }
 ] 

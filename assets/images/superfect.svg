@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g transform="rotate(45, 18, 18)">
+    <!-- Arrow body — solid gold, inward notch at tail -->
+    <path d="M18 3 L12 14 L10 26 L18 20 L26 26 L24 14 Z" fill="#c9a227"/>
+    <!-- Interconnecting lines -->
+    <line x1="18" y1="5" x2="12" y2="14" stroke="#000" stroke-width="0.8"/>
+    <line x1="18" y1="5" x2="24" y2="14" stroke="#000" stroke-width="0.8"/>
+    <line x1="12" y1="14" x2="10" y2="26" stroke="#000" stroke-width="0.8"/>
+    <line x1="24" y1="14" x2="26" y2="26" stroke="#000" stroke-width="0.8"/>
+    <line x1="12" y1="14" x2="26" y2="26" stroke="#000" stroke-width="0.8"/>
+    <line x1="24" y1="14" x2="10" y2="26" stroke="#000" stroke-width="0.8"/>
+    <!-- Nodes -->
+    <circle cx="18" cy="5" r="2.2" fill="#c9a227" stroke="#000" stroke-width="0.8"/>
+    <circle cx="12" cy="14" r="2" fill="#c9a227" stroke="#000" stroke-width="0.8"/>
+    <circle cx="24" cy="14" r="2" fill="#c9a227" stroke="#000" stroke-width="0.8"/>
+    <circle cx="18" cy="19" r="2" fill="#c9a227" stroke="#000" stroke-width="0.8"/>
+    <circle cx="10" cy="26" r="2" fill="#c9a227" stroke="#000" stroke-width="0.8"/>
+    <circle cx="26" cy="26" r="2" fill="#c9a227" stroke="#000" stroke-width="0.8"/>
+  </g>
+</svg>
